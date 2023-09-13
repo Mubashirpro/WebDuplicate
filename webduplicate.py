@@ -1,8 +1,10 @@
-from bs4 import BeautifulSoup
+
 import requests
 import time
-from colorama import  Fore
 import os
+from colorama import  Fore if Exception:
+	os.system("pip install colorama")
+
 
 print(Fore.CYAN,"@@@@ @@@@  @@@@""\n""@@@ @@@ @@@ @@@ @@@")
 
@@ -17,9 +19,9 @@ print("_______________")
 url = str(input(Fore.LIGHTYELLOW_EX+"Enter URL of Site you want to duplicate : "))
 file_name = str(input("File name to save :"))
 
-os.chdir("/storage/emulated/0/WebDuplicate/Sites/")
+os.chdir("/Sites/")
 
-path = "/storage/emulated/0/WebDuplicate/Sites/"+file_name+".html"
+path Sites/"+file_name+".html"
 
 
 op = int(input("[1] Start ""\n""[0] Back""\n"))
